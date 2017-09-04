@@ -1,4 +1,5 @@
 #Pulselive - Front-end Development Task
+
 ##Player Stats Card
 
 Author: Alex Garulli
@@ -20,4 +21,4 @@ To build the files ready for production in `dist` folder:
 Techs chosen:
 * Webpack 2 as runner task : sass compiler, devServer and build
 * Jquery - to avoid crossbrower issue during HTTP call to JSON data
-* VanillaJS
+* VanillaJS with ES6 syntax
