@@ -1,10 +1,10 @@
-# Pulselive - Front-end Development Task
+# Front-end Development Task
 
 ## Player Stats Card 
 
 Author: Alex Garulli
 
-`cd into PulseliveFETest dir`
+`cd into FETest dir`
 
 `npm install`
 
