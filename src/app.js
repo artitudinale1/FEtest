@@ -36,7 +36,6 @@ const PlayerStats = (function () {
 
           option.innerHTML = "Select a player...";
           option.value = "4916";
-
           for (let key in data.players){
             option = document.createElement("option");
             option.value = data.players[key].player.id;
@@ -114,19 +113,19 @@ const PlayerStats = (function () {
                   let playerName = document.createElement("h1");
                   statsSection.appendChild(playerName);
 
-                  var playerRule = document.createElement("p");
+                  let playerRule = document.createElement("p");
                   statsSection.appendChild(playerRule);
 
                   let list = document.createElement("ul");
                   statsSection.appendChild(list);
                   list.setAttribute('id', 'list');
 
-                  data.players.map((key, j)=> {
-                    playerName.innerHTML= key.player.name.first + ' ' + key.player.name.last;
-                    playerRule.innerHTML= key.player.info.positionInfo;
+                  data.players[key].stats.map((o, j)=> {
+                    playerName.innerHTML= data.players[key].player.name.first + ' ' + data.players[key].player.name.last;
+                    playerRule.innerHTML= data.players[key].player.info.positionInfo;
 
                     let stats = document.createElement("li");
-                    stats.innerHTML = key.stats[j].name.replace('_', ' ') + '  <span>' + key.stats[j].value + '</span>';
+                    stats.innerHTML = o.name.replace('_', ' ') + '  <span>' + o.value + '</span>';
                     stats.setAttribute("class", "stats");
                     document.getElementById("list").appendChild(stats);
                   });
