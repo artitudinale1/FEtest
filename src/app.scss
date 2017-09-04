@@ -1,0 +1,62 @@
+$font : Arial, "Helvetica Neue", Helvetica, sans-serif;
+$gray : #eaeaea;
+$red: #e90052;
+$white: #FFFFFF;
+
+body{
+  font-family: $font;
+}
+
+header, figure, article{
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+section{
+    padding: 10px;
+    background: $red;
+    ul {
+      margin: 0;
+      padding: 0;
+      li{
+        list-style: none;
+        background: white;
+        padding: 10px;
+        margin: 5px 10px;
+        text-transform: capitalize;
+        span{
+          float: right;
+          font-weight: bold;
+        }
+      }
+    }
+    h1,p{
+      color: $white;
+    }
+}
+
+figure i{
+  width: 103px;
+  height: 17.2%;
+  position: absolute;
+  z-index: 99999;
+  top: 330px;
+  height: 100px;
+    }
+
+select {
+   height: 50px;
+   overflow: hidden;
+   width: 100%;
+   font-family: $font;
+   font-size: 16px;
+   border: none;
+   background: url(./images/arrow-down.png) no-repeat $gray;
+   background-position: 274px 18px;
+   padding: 0 10px;
+   appearance: none;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+}
