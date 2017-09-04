@@ -1,6 +1,6 @@
-#Pulselive - Front-end Development Task
+# Pulselive - Front-end Development Task
 
-##Player Stats Card
+## Player Stats Card 
 
 Author: Alex Garulli
 
